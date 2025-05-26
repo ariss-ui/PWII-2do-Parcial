@@ -1,2 +1,2 @@
 # PWII-2do-Parcial
-Examen
+Evaluacion Segundo Parcial - Programación Web II
