@@ -14,4 +14,72 @@ h1 {
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;
+  color: darkslateblue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+
+  gap: 1em;
+  padding: 1em;
+  border-radius: 1em;
+
+  justify-content: center;
+
+  max-width: 1440px;
+}
+
+.pokemon {
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 2em;
+  background-color: beige;
+}
+
+.pokemon-image {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: darkgrey;
+}
+
+.pokemon-name {
+  text-align: center;
+  font-family: 2em;
+  color: darkviolet;
+}
+
+.pokemon-type {
+  padding: .5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+
+  border-radius: 1.6em;
+  color: red;
+  background-color: rgb(255, 193, 193);
+}
+
+.pokemon-description {
+  line-height: 1.36em;
+}
+
+.pokemon-powers {
+  display: flexbox;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  list-style: none;
+}
+
+.pokemon-skill {
+  padding: 0.4em;
+  border-radius: 0.4em;
+  font-size: 0.75em;  
+  color: crimson;
+  background-color: black;
 }
