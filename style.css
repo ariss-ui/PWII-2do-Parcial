@@ -25,15 +25,14 @@ h1 {
   padding: 1em;
   border-radius: 1em;
 
-  justify-content: center;
-
+  margin: 0 auto;
   max-width: 1440px;
 }
 
 .pokemon {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   gap: 1em;
   padding: 2em;
   border-radius: 2em;
@@ -50,16 +49,12 @@ h1 {
 
 .pokemon-name {
   text-align: center;
-  font-family: 2em;
+  font-size: 2em;
   color: darkviolet;
 }
 
 .pokemon-type {
-  padding: .5em;
-  padding-bottom: 0.5em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-
+  padding: .5em .75em;
   border-radius: 1.6em;
   color: red;
   background-color: rgb(255, 193, 193);
@@ -67,10 +62,11 @@ h1 {
 
 .pokemon-description {
   line-height: 1.36em;
+  text-align: center;
 }
 
 .pokemon-powers {
-  display: flexbox;
+  display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   list-style: none;
@@ -82,4 +78,35 @@ h1 {
   font-size: 0.75em;  
   color: crimson;
   background-color: black;
+}
+
+/* Pantallas max-eidith: 1023px */
+@media screen and (max-width: 1023px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 0.5em;
+  }
+
+  .pokemon {
+    padding: 1.2em;
+    gap: 0.75em;
+  }
+}
+
+/* Pantallas max-widith: 435px */
+@media screen and (max-width: 435px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0.2em;
+  }
+
+  .pokemon {
+    padding: 1em;
+    gap: 0.5em;
+  }
+
+  .pokemon-powers {
+    gap: 0.2em;
+  }
 }
